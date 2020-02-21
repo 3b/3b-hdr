@@ -1,0 +1,1 @@
+image1.hdr and rgbr4x4.hdr from https://github.com/image-rs/image/tree/master/tests/images/hdr/images
