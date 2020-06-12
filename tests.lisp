@@ -2,7 +2,7 @@
 (defpackage #:3b-hdr/test
   (:use :parachute :cl)
   (:local-nicknames (:hdr :3b-hdr)))
-(in-package 3bgl-hdr/test)
+(in-package 3b-hdr/test)
 
 
 (defun test-float (data raw-file)
@@ -21,7 +21,7 @@
           do (setf (nibbles:ub32ref/le b i) f))
     (equalp r b)))
 
-(defparameter *test-dir* (asdf:system-relative-pathname '3bgl-hdr "test/"))
+(defparameter *test-dir* (asdf:system-relative-pathname '3b-hdr "test/"))
 
 (defmacro test-file/rgb9e5 (file w h raw &optional (exp 1.0))
   `(let* ((*default-pathname-defaults* *test-dir*)
