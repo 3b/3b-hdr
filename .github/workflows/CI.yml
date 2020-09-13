@@ -57,9 +57,9 @@ jobs:
        LISP: ${{ matrix.lisp }}
       run: curl -L https://raw.githubusercontent.com/roswell/roswell/master/scripts/install-for-ci.sh | sh -x
 
-    - name: install Parachute
+    - name: install parachute
       run: |
-        ros install Parachute
+        ros install parachute
         echo "::add-path::$HOME/.roswell/bin"
 
 
