@@ -77,5 +77,5 @@ jobs:
     - name: load code and run tests
       shell: bash
       run: |
-        run-parachute -l "3b-hdr/test" hdr
+        run-parachute -l "3b-hdr/test" "3b-hdr/test"
 
